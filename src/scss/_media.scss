@@ -1,0 +1,33 @@
+@media(max-width: 1200px) {
+    
+}
+
+@media(max-width: 992px) {
+    .header {
+        padding-top: 15px;
+
+        &__img {
+            width: 110px;
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 768px) {
+    
+}
+
+@media(max-width: 576px) {
+    
+}
+
+@media(max-width: 480px) {
+    .header {
+        &__img {
+            width: 80px;
+        }
+    }
+}

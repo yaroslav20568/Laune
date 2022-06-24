@@ -6,9 +6,171 @@
 
 
 body {
-	
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.2;
+	font-family: 'Rubik', sans-serif;
+	color: $black;
+	background-color: $white;
 }
 
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* INTRO */
+.header {
+	padding-top: 30px;
+	position: absolute;
+	width: 100%;
+
+	&__logo {
+	}
+
+	&__link {
+
+	}
+
+	&__img {
+	}
+}
+.intro {
+	height: 100vh;
+	padding-top: 180px;
+
+	& .container {
+		height: 100%;
+	}
+
+	&__content {
+		height: 100%;
+		padding: 186px 0 118px;
+		background-image: url("@img/intro/intro-bg.png");
+		background-repeat: no-repeat;
+		background-position: center right;
+	}
+	
+	&__info {
+		max-width: 495px;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 60px;
+		line-height: 1.4;
+		text-transform: uppercase;
+		margin-bottom: 50px;
+	}
+	
+	&__wrapper-subtitle {
+		display: flex;
+	}
+
+	&__subtitle {
+		background: #96BE98;
+		border-radius: 15px;
+		padding: 20px 30px;
+	}
+}
+/* INTRO */
+
+.section {
+	padding: 100px 0;
+
+	&__header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 14px;
+	}
+
+	&__wrapper-header {
+		
+	}
+
+	&__header-title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 28px;
+		color: #ACACAC;
+	}
+
+	&__header-img {
+
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 40px;
+		line-height: 1.4;
+		margin-bottom: 20px;
+	}
+
+	&__wrapper-subtitle {
+		display: flex;
+	}
+
+	&__subtitle {
+		font-weight: 400;
+		font-size: 20px;
+		line-height: 1.4;
+
+		background: #96BE98;
+		border-radius: 15px;
+		padding: 20px 25px;
+	}
+}
+
+/* ABOUT-COMPANY */
+.about-company {
+	&__title {
+		max-width: 1139px;
+	}
+
+	&__subtitle {
+		max-width: 819px;
+		margin-bottom: 50px;
+	}
+
+	&__cards {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -15px;
+	}
+
+	&__card {
+		width: 33.3333333333%;
+		padding: 0 15px;
+	}
+
+	&-card {
+		&__info {
+			padding-right: 8px;
+		}
+
+		&__img {
+			max-width: 100%;
+			margin-bottom: 50px;
+		}
+
+		&__title {
+			font-weight: 600;
+			font-size: 20px;
+			line-height: 24px;
+			margin-bottom: 20px;
+		}
+
+		&__text {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+	}
+
+}
+/* INTRO */
 
 
 @import "media.scss";
