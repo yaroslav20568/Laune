@@ -137,6 +137,7 @@ body {
 	&__cards {
 		display: flex;
 		justify-content: space-between;
+		flex-wrap: wrap;
 		margin: 0 -15px;
 	}
 
@@ -170,7 +171,68 @@ body {
 	}
 
 }
-/* INTRO */
+/* ABOUT-COMPANY */
 
+/* ABOUT-PRODUCTS */
+.about-products {
+	&__title {
+		max-width: 787px;
+	}
+
+	&__wrapper-subtitle {
+		justify-content: end;
+	}
+
+	&__subtitle {
+		max-width: 667px;
+	}
+
+	&__content {
+		transform: translateY(-41px);
+	}
+
+	&__content-inner {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__left {
+		margin-right: 41px;
+	}
+
+	&__img {
+	}
+
+	&__right {
+		max-width: 559px;
+		padding-top: 106px;
+	}
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -15px;
+		gap: 40px 0;
+	}
+
+	&__item {
+		width: 50%;
+		padding: 0 15px;
+	}
+
+	&-item {
+		&__title {
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+	
+		&__subtitle {
+			font-weight: 400;
+			font-size: 16px;
+			line-height: 1.6;
+		}
+	}
+}
+/* ABOUT-PRODUCTS */
 
 @import "media.scss";
