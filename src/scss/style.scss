@@ -401,5 +401,52 @@ body {
 }
 /* COMPANY-TV */
 
+/* FORMAT-CENTRE */
+.format-centre {
+
+	&__content {
+		height: 676px;
+	}
+
+	&__title {
+	}
+
+	&__wrapper-subtitle {
+	}
+
+	&__subtitle {
+		max-width: 505px;
+	}
+	
+	&__img {
+		transform: translateY(-28%);
+		max-width: 100%;
+	}
+}
+/* FORMAT-CENTRE */
+
+/* FORMAT-STREET */
+.format-street {
+
+	&__content {
+		height: 700px;
+	}
+
+	&__title {
+	}
+
+	&__wrapper-subtitle {
+	}
+
+	&__subtitle {
+		max-width: 454px;
+	}
+	
+	&__img {
+		transform: translateY(-28%);
+		max-width: 100%;
+	}
+}
+/* FORMAT-STREET */
 
 @import "media.scss";

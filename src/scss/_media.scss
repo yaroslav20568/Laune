@@ -45,6 +45,26 @@
 			}
 		}
 	}
+
+	.format-centre {
+		&__content {
+			height: auto;
+		}
+
+		&__img {
+			transform: translateY(-0%);
+		}
+	}
+
+	.format-street {
+		&__content {
+			height: auto;
+		}
+
+		&__img {
+			transform: translateY(-0%);
+		}
+	}
 }
 
 @media(max-width: 992px) {
