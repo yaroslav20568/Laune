@@ -528,4 +528,103 @@ body {
 }
 /* ADVANTAGES-ANALYSIS */
 
+/* ADVANTAGES-MARKETPLACES */
+.advantages-marketplaces {
+
+	&__content {
+		height: 805px;
+	}
+
+	&__title {
+	}
+
+	&__wrapper-subtitle {
+	}
+
+	&__subtitle {
+		max-width: 587px;
+	}
+
+	&__img {
+		transform: translateY(-12%);
+		max-width: 100%;
+		position: relative;
+		z-index: -1;
+	}
+}
+/* ADVANTAGES-MARKETPLACES */
+
+/* ADVANTAGES-SCHOOL */
+.advantages-school {
+
+	&__title {
+		max-width: 755px;
+		margin-bottom: 0;
+	}
+
+	&__content {
+		transform: translateY(-27px);
+	}
+
+	&__content-inner {
+		display: flex;
+		align-items: center;
+	}
+
+	&__left {
+		margin-right: 30px;
+	}
+
+	&__items {
+	}
+
+	&__item {
+		padding-left: 30px;
+		margin-bottom: 20px;
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			width: 5px;
+			height: 5px;
+			background-color: #000;
+			border-radius: 100%;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+	}
+
+	&__right {
+	}
+
+	&__img {
+	}
+}
+.section {
+
+	&__header {
+	}
+
+	&__header-title {
+	}
+
+	&__header-img {
+	}
+
+	&__title {
+	}
+}
+.container {
+}
+.advantages-school-item {
+
+	&__text {
+	}
+}
+/* ADVANTAGES-SCHOOL */
+
+
 @import "media.scss";
