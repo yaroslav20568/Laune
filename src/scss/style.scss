@@ -235,4 +235,141 @@ body {
 }
 /* ABOUT-PRODUCTS */
 
+/* PURPOSES-COMPANY */
+.purposes-company {
+	&__title {
+		width: 743px;
+	}
+
+	&__content {
+		height: 500px;
+
+		background-image: url("@img/purposes-company/Image.png");
+		background-repeat: no-repeat;
+		background-position: center bottom;
+		background-size: contain;
+	}
+
+	&__items {
+		display: flex;
+		justify-content: space-between;
+		height: 100%
+	}
+
+	&__left-items, &__right-items {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__left-items {
+		padding: 70px 0;
+	}
+
+	&__left-items &__item {
+		&:first-child {
+			max-width: 161px;
+		}
+
+		&:nth-child(2) {
+			max-width: 332px;
+		}
+
+		&:last-child {
+			max-width: 193px;
+		}
+	}
+
+	&__item {
+	}
+
+	&__right-items {
+		padding: 100px 0;
+	}
+
+	&__right-items &__item {
+		&:first-child {
+			max-width: 192px;
+		}
+
+		&:last-child {
+			max-width: 159px;
+		}
+	}
+
+	&-item {
+
+		&__text {
+			font-weight: 400;
+			font-size: 20px;
+			line-height: 1.4;
+		}
+	}
+}
+/* PURPOSES-COMPANY */
+
+/* DEALER-NETWORK */
+.dealer-network {
+
+		&__content {
+			background-image: url("@img/map-bg.png");
+			background-repeat: no-repeat;
+			background-position: center center;
+			// background-size: contain;
+			// height: 625px;
+			padding-bottom: 48px;
+		}
+
+		&__title {
+			max-width: 740px;
+			margin-bottom: 100px;
+		}
+
+		&__items {
+			display: flex;
+			justify-content: space-between;
+			padding: 0 96px 0 110px;
+		}
+
+		&__item {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		&-item {
+
+			&__icon {
+				width: 150px;
+				height: 150px;
+				border-radius: 100%;
+				background-color: #F1D7B9;
+				border: 10px solid #AF9597;
+				position: relative;
+				margin-bottom: 40px;
+			}
+		
+			&__icon-img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate3d(-50%, -50%, 0)
+			}
+		
+			&__count {
+				font-weight: 400;
+				font-size: 90px;
+				line-height: 1.188;
+				margin-bottom: 20px;
+			}
+		
+			&__text {
+				max-width: 175px;
+				text-align: center;
+			}
+		}
+}
+/* DEALER-NETWORK */
+
+
 @import "media.scss";

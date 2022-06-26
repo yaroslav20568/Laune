@@ -107,6 +107,24 @@
 			}
 		}
 	}
+
+	.dealer-network {
+		&__content {
+			background-size: contain;
+		}
+
+		&__title {
+			margin-bottom: 20px;
+		}
+
+		&__items {
+			padding: 0 60px;
+		}
+
+		&-item__count {
+			font-size: 60px;
+		}
+	}
 }
 
 @media(max-width: 768px) {
@@ -115,6 +133,12 @@
 			&__img {
 				margin-bottom: 20px;
 			}
+		}
+	}
+
+	.dealer-network {
+		&__items {
+			padding: 0;
 		}
 	}
 }
@@ -190,6 +214,34 @@
 			}
 		}
 	}
+
+	.dealer-network {
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			flex-direction: row;
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+
+		&-item__icon {
+			width: 90px;
+			height: 90px;
+			border: 5px solid #AF9597;
+			margin-bottom: 0;
+		}
+
+		&-item__icon-img {
+			width: 40px;
+			width: 40px;
+		}
+
+		&-item__count {
+			margin-bottom: 0;
+		}
+	}
 }
 
 @media(max-width: 480px) {
@@ -198,4 +250,32 @@
             width: 80px;
         }
     }
+
+	.dealer-network {
+		&-item {
+			&__count {
+				font-size: 30px;
+			}
+			
+			&__text {
+				max-width: 170px;
+			}
+		}
+	}
+}
+
+@media(max-width: 380px) {
+	.dealer-network {
+		&-item__icon {
+			width: 70px;
+			height: 70px;
+			border: 5px solid #AF9597;
+			margin-bottom: 0;
+		}
+	
+		&-item__icon-img {
+			width: 30px;
+			width: 30px;
+		}
+	}
 }
