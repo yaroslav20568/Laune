@@ -141,6 +141,31 @@
 			padding: 0;
 		}
 	}
+
+	.company-tv {
+		&__imgs {
+			display: block;
+		}
+
+		&__left-imgs, &__right-imgs {
+			width: 100%;
+		}
+
+		// &__left-imgs &__left-img {
+		// 	margin-bottom: 10px;
+		// }
+
+		&__right-imgs {
+			text-align: left;
+			display: flex;
+			justify-content: space-around;
+		}
+
+		&__right-imgs &__right-img {
+			width: 50%;
+			object-fit: scale-down;
+		}
+	}
 }
 
 @media(max-width: 576px) {

@@ -371,5 +371,35 @@ body {
 }
 /* DEALER-NETWORK */
 
+/* COMPANY-TV */
+.company-tv {
+
+	&__title {
+		max-width: 835px;
+	}
+
+	&__imgs {
+		display: flex;
+		align-items: center;
+	}
+
+	&__left-imgs {
+		width: 77%;
+	}
+
+	&__left-img, &__right-img {
+		max-width: 100%;
+	}
+
+	&__right-imgs {
+		width: 23%;
+		text-align: right;
+	}
+
+	&__right-img {
+	}
+}
+/* COMPANY-TV */
+
 
 @import "media.scss";
