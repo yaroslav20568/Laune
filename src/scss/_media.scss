@@ -134,7 +134,7 @@
 		}
 
 		&__title {
-			margin-bottom: 20px;
+			margin-bottom: 50px;
 		}
 
 		&__items {
@@ -143,6 +143,24 @@
 
 		&-item__count {
 			font-size: 60px;
+		}
+	}
+
+	.advantages-analysis {
+		&__content {
+			background-size: contain;
+		}
+
+		&__title {
+			margin-bottom: 50px;
+		}
+
+		&-item {
+			&__text {
+				p {
+					margin-bottom: 10px;
+				}
+			}
 		}
 	}
 }
@@ -184,6 +202,27 @@
 		&__right-imgs &__right-img {
 			width: 50%;
 			object-fit: scale-down;
+		}
+	}
+
+	.advantages-analysis {
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
+		&-item {
+			&__title {
+				margin-bottom: 20px;
+			}
+
+			&__icon {
+				margin-bottom: 20px;
+			}
 		}
 	}
 }
@@ -266,27 +305,48 @@
 		}
 
 		&__item {
-			flex-direction: row;
-			justify-content: space-between;
+			width: 100%;
 			margin-bottom: 30px;
 		}
 
-		&-item__icon {
-			width: 90px;
-			height: 90px;
-			border: 5px solid #AF9597;
-			margin-bottom: 0;
-		}
+		&-item {
+			&__icon {
+				margin-bottom: 20px;
+			}
 
-		&-item__icon-img {
-			width: 40px;
-			width: 40px;
-		}
-
-		&-item__count {
-			margin-bottom: 0;
+			&__count {
+				font-size: 40px;
+			}
 		}
 	}
+
+	// .dealer-network {
+	// 	&__items {
+	// 		display: block;
+	// 	}
+
+	// 	&__item {
+	// 		flex-direction: row;
+	// 		justify-content: space-between;
+	// 		margin-bottom: 30px;
+	// 	}
+
+	// 	&-item__icon {
+	// 		width: 90px;
+	// 		height: 90px;
+	// 		border: 5px solid #AF9597;
+	// 		margin-bottom: 0;
+	// 	}
+
+	// 	&-item__icon-img {
+	// 		width: 40px;
+	// 		width: 40px;
+	// 	}
+
+	// 	&-item__count {
+	// 		margin-bottom: 0;
+	// 	}
+	// }
 }
 
 @media(max-width: 480px) {
@@ -296,31 +356,31 @@
         }
     }
 
-	.dealer-network {
-		&-item {
-			&__count {
-				font-size: 30px;
-			}
+	// .dealer-network {
+	// 	&-item {
+	// 		&__count {
+	// 			font-size: 30px;
+	// 		}
 			
-			&__text {
-				max-width: 170px;
-			}
-		}
-	}
+	// 		&__text {
+	// 			max-width: 170px;
+	// 		}
+	// 	}
+	// }
 }
 
 @media(max-width: 380px) {
-	.dealer-network {
-		&-item__icon {
-			width: 70px;
-			height: 70px;
-			border: 5px solid #AF9597;
-			margin-bottom: 0;
-		}
+	// .dealer-network {
+	// 	&-item__icon {
+	// 		width: 70px;
+	// 		height: 70px;
+	// 		border: 5px solid #AF9597;
+	// 		margin-bottom: 0;
+	// 	}
 	
-		&-item__icon-img {
-			width: 30px;
-			width: 30px;
-		}
-	}
+	// 	&-item__icon-img {
+	// 		width: 30px;
+	// 		width: 30px;
+	// 	}
+	// }
 }
