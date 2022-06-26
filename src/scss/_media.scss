@@ -77,12 +77,55 @@
 	}
 
 	.advantages-school {
+		&__title {
+			margin-bottom: 14px;
+		}
+
 		&__content {
-			transform: translateY(0);
+			transform: translateY(-0%);
 		}
 
 		&__left, &__right {
 			width: 50%;
+		}
+
+		&__img {
+			max-width: 100%;
+		}
+	}
+
+	.investment {
+		&__content-inner {
+			display: block;
+		}
+
+		&__left, &__right {
+			width: 100%;
+		}
+
+		&__left {
+			margin-bottom: 30px;
+		}
+	}
+
+	.quality-mark {
+		&__content {
+			transform: translateY(-0%);
+			position: static;
+			z-index: 0;
+		}
+
+		&__content-inner {
+			align-items: center;
+		}
+
+		&__left, &__right {
+			width: 50%;
+		}
+
+		&__left {
+			padding: 0;
+			margin-right: 30px;
 		}
 
 		&__img {
@@ -189,6 +232,9 @@
 	}
 
 	.advantages-school {
+		&__title {
+		}
+
 		&__content-inner {
 			// display: block;
 			flex-direction: column;
@@ -202,6 +248,43 @@
 			order: 1;
 			margin-right: 0;
 			margin-top: 20px;
+		}
+
+		&__right {
+			order: 0;
+			text-align: center;
+		}
+	}
+
+	.investment {
+		&__title {
+			margin-bottom: 50px;
+		}
+	}
+
+	.quality-mark {
+		&__content-inner {
+			flex-direction: column;
+		}
+
+		&__left, &__right {
+			width: 100%;
+		}
+
+		&__left {
+			order: 1;
+			margin-right: 0;
+		}
+
+		&__items {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__item {
+			&:first-child {
+				margin-right: 30px;
+			}
 		}
 
 		&__right {
@@ -366,33 +449,58 @@
 		}
 	}
 
-	// .dealer-network {
-	// 	&__items {
-	// 		display: block;
-	// 	}
+	.investment {
+		&__header-col {
+			&:first-child {
+				width: 60%;
+			}
+	
+			&:nth-child(2) {
+				margin-right: 5px;
+			}
+	
+			&:nth-child(2), &:last-child {
+				width: 20%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+		}
 
-	// 	&__item {
-	// 		flex-direction: row;
-	// 		justify-content: space-between;
-	// 		margin-bottom: 30px;
-	// 	}
+		&__body-col {
+			&:first-child {
+				width: 60%;
+			}
+	
+			&:nth-child(2), &:last-child {
+				width: 20%;
+			}
+		}
+	}
 
-	// 	&-item__icon {
-	// 		width: 90px;
-	// 		height: 90px;
-	// 		border: 5px solid #AF9597;
-	// 		margin-bottom: 0;
-	// 	}
+	.quality-mark {
+		&__content-inner {
+		}
 
-	// 	&-item__icon-img {
-	// 		width: 40px;
-	// 		width: 40px;
-	// 	}
+		&__left, &__right {
+		}
 
-	// 	&-item__count {
-	// 		margin-bottom: 0;
-	// 	}
-	// }
+		&__left {
+		}
+
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			&:first-child {
+				margin-right: 0;
+			}
+		}
+
+		&__right {
+		}
+	}
 }
 
 @media(max-width: 480px) {
@@ -413,6 +521,24 @@
 	// 		}
 	// 	}
 	// }
+
+	.investment {
+		&__header-col {
+			&:nth-child(2), &:last-child {
+				font-size: 16px;
+			}
+		}
+
+		&__body-row &__body-col {
+			&:first-child {
+				font-size: 16px;
+			}
+
+			&:nth-child(2), &:last-child {
+				font-size: 20px;
+			}
+		}
+	}
 }
 
 @media(max-width: 380px) {
