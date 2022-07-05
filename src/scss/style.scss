@@ -129,9 +129,12 @@ body {
 		max-width: 1139px;
 	}
 
+	&__wrapper-subtitle {
+		margin-bottom: 50px;
+	}
+
 	&__subtitle {
 		max-width: 819px;
-		margin-bottom: 50px;
 	}
 
 	&__cards {
@@ -563,12 +566,14 @@ body {
 	}
 
 	&__content {
-		transform: translateY(-27px);
+		height: 571px;
 	}
 
 	&__content-inner {
 		display: flex;
 		align-items: center;
+
+		transform: translateY(-27px);
 	}
 
 	&__left {
@@ -582,6 +587,10 @@ body {
 		padding-left: 30px;
 		margin-bottom: 20px;
 		position: relative;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
 
 		&:before {
 			content: "";
@@ -756,14 +765,19 @@ body {
 	}
 
 	&__content {
-		transform: translateY(-135px);
-		position: relative;
-		z-index: -1;
+		// transform: translateY(-135px);
+		// position: relative;
+		// z-index: -1;
+		height: 702px;
 	}
 
 	&__content-inner {
 		display: flex;
 		justify-content: space-between;
+
+		transform: translateY(-135px);
+		position: relative;
+		z-index: -1;
 	}
 
 	&__left {
@@ -799,9 +813,8 @@ body {
 		&__text {
 			font-size: 16px;
 			line-height: 1.187;
-			margin-bottom: 15px;
 
-			padding-left: 30px;
+			padding-left: 25px;
 			margin-bottom: 15px;
 			position: relative;
 
@@ -817,14 +830,122 @@ body {
 				background-color: #000;
 				border-radius: 100%;
 				position: absolute;
-				left: 13px;
-				top: 50%;
-				transform: translateY(-50%);
+				left: 10px;
+				top: 7px;
+				// top: 50%;
+				// transform: translateY(-50%);
 			}
 		}
 	}
 }
 /* QUALITY-MARK */
+
+/* PARTNER-OFFER */
+.partner-offer {
+	&__title {
+		max-width: 1011px;
+	}
+
+	&__wrapper-subtitle {
+		margin-bottom: 40px;
+	}
+
+	&__subtitle {
+		max-width: 956px;
+	}
+
+	&__content {
+		height: 570px;
+
+		background-image: url("@img/partner-offer/partner-offer-bg.png");
+		background-repeat: no-repeat;
+		background-position: center top;
+		background-size: contain;
+	}
+
+	&__items {
+		// display: flex;
+		// justify-content: space-between;
+		height: 100%;
+	}
+
+	// &__left-items, &__right-items {
+	// 	display: flex;
+	// 	flex-direction: column;
+	// 	justify-content: space-between;
+	// }
+
+	&__row-items {
+		display: flex;
+		justify-content: space-between;
+		margin: 0 -15px;
+		margin-bottom: 100px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+
+	// &__left-items {
+	// 	max-width: 290px;
+	// 	padding: 20px 0 131px;
+	// }
+
+	// &__right-items {
+	// 	max-width: 270px;
+	// 	padding: 20px 0 125px;
+	// }
+
+	&__item {
+		padding: 0 15px;
+
+		&:first-child {
+			max-width: 287px;
+		}
+
+		&:last-child {
+			max-width: 271px;
+		}
+	}
+
+	&-item {
+		&__title {
+			font-weight: 600;
+			margin-bottom: 20px;
+		}
+
+		&__texts {
+		}
+
+		&__text {
+			font-size: 16px;
+			line-height: 1.187;
+
+			padding-left: 25px;
+			margin-bottom: 15px;
+			position: relative;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
+
+			&:before {
+				content: "";
+				display: block;
+				width: 5px;
+				height: 5px;
+				background-color: #000;
+				border-radius: 100%;
+				position: absolute;
+				left: 10px;
+				top: 7px;
+				// top: 50%;
+				// transform: translateY(-50%);
+			}
+		}
+	}
+}
+/* PARTNER-OFFER */
 
 
 @import "media.scss";
