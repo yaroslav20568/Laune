@@ -255,7 +255,7 @@ body {
 /* PURPOSES-COMPANY */
 .purposes-company {
 	&__title {
-		width: 743px;
+		max-width: 743px;
 	}
 
 	&__content {
@@ -302,6 +302,7 @@ body {
 
 	&__right-items {
 		padding: 100px 0;
+		transform: translateX(22px);
 	}
 
 	&__right-items &__item {
