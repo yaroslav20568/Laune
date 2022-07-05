@@ -886,16 +886,6 @@ body {
 		}
 	}
 
-	// &__left-items {
-	// 	max-width: 290px;
-	// 	padding: 20px 0 131px;
-	// }
-
-	// &__right-items {
-	// 	max-width: 270px;
-	// 	padding: 20px 0 125px;
-	// }
-
 	&__item {
 		padding: 0 15px;
 
@@ -946,6 +936,132 @@ body {
 	}
 }
 /* PARTNER-OFFER */
+
+/* PARTNER-START */
+.partner-start {
+	padding: 100px 0 0;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	
+	&__left {
+		padding: 22px 0;
+	}
+
+	&__title {
+		font-weight: 600;
+		font-size: 24px;
+		line-height: 28px;
+		color: #ACACAC;
+		margin-bottom: 20px;
+	}
+
+	&__wrapper-subtitle {
+		margin-bottom: 60px;
+	}
+
+	&__subtitle {
+		padding: 20px 40px;
+		max-width: 437px;
+		font-weight: 600;
+		font-size: 32px;
+		line-height: 1.4;
+		text-align: center;
+	}
+
+	&__info {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		width: 570px;
+	}
+
+	&__contacts {
+		// margin-right: 28px;
+
+		// &-phone {
+		// 	margin-bottom: 30px;
+
+		// 	a {
+		// 		font-weight: 600;
+		// 		font-size: 24px;
+		// 		line-height: 1.4;
+		// 		color: #000000;
+		// 	}
+		// }
+
+		&-phone, &-email {
+			p {
+				font-size: 24px;
+				line-height: 1.4;
+				color: #000000;
+				position: relative;
+				padding-left: 34px;
+
+				&:before {
+					content: "";
+					display: block;
+					width: 24px;
+					height: 24px;
+					position: absolute;
+					left: 0;
+					top: 50%;
+					transform: translateY(-50%);
+				}
+			}
+		}
+
+		&-phone {
+			font-weight: 600;
+			margin-bottom: 30px;
+
+			p {
+				&:before {
+					background-image: url('@img/partner-start/phone.png');
+				}
+			}
+		}
+
+		&-email {
+			font-weight: 400;
+
+			p {
+				&:before {
+					background-image: url('@img/partner-start/email.png');
+				}
+			}
+		}
+
+	}
+
+	&__qr-code {
+		text-align: center;
+
+		h3 {
+			font-weight: 600;
+			font-size: 32px;
+			line-height: 1.4;
+			margin-bottom: 15px;
+		}
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	&__right {
+		transform: translateX(-50px);
+	}
+
+	&-right {
+		&__img {
+
+		}
+	}
+}
+/* PARTNER-START */
 
 
 @import "media.scss";
