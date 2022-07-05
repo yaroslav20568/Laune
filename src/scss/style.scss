@@ -43,13 +43,27 @@ body {
 	& .container {
 		height: 100%;
 	}
-
-	&__content {
+	
+	&__wrapper {
+		max-width: 1370px;
+		margin: 0 auto;
 		height: 100%;
-		padding: 186px 0 118px;
+
 		background-image: url("@img/intro/intro-bg.png");
 		background-repeat: no-repeat;
 		background-position: center right;
+	}
+
+	&__content {
+		height: 100%;
+		// padding: 186px 0 118px;
+		padding: 0;
+		display: flex;
+		align-items: center;
+
+		// background-image: url("@img/intro/intro-bg.png");
+		// background-repeat: no-repeat;
+		// background-position: center right;
 	}
 	
 	&__info {

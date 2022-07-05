@@ -1,4 +1,4 @@
-@media(max-width: 1500px) {
+@media(max-width: 1550px) {
 	.partner-start {
 		&__right {
 			transform: translateX(0px);
@@ -6,6 +6,24 @@
 			&-img {
 				max-width: 100%;
 			}
+		}
+	}
+}
+
+@media(max-width: 1300px) {
+	.intro {
+		&__wrapper {
+			background-size: contain;
+		}
+
+		// &__content {
+		// 	padding: 0;
+		// 	display: flex;
+		// 	align-items: center;
+		// }
+
+		&__title {
+			font-size: 50px;
 		}
 	}
 }
@@ -198,6 +216,10 @@
         }
     }
 
+	.intro {
+		padding-top: 112px;
+	}
+
 	.section {
 		padding: 50px 0;
 
@@ -374,6 +396,12 @@
 }
 
 @media(max-width: 768px) {
+	.intro {
+		&__title {
+			font-size: 40px;
+		}
+	}
+
     .about-company {
 		&-card {
 			&__img {
@@ -450,6 +478,15 @@
 
 		&__qr-code {
 			text-align: center;
+		}
+	}
+}
+
+@media(max-width: 650px) {
+	.intro {
+		&__title {
+			font-size: 30px;
+			margin-bottom: 30px;
 		}
 	}
 }
@@ -638,6 +675,10 @@
         }
     }
 
+	.intro {
+		height: 450px;
+	}
+
 	// .dealer-network {
 	// 	&-item {
 	// 		&__count {
@@ -683,4 +724,13 @@
 	// 		width: 30px;
 	// 	}
 	// }
+}
+
+@media(min-width: 320px) and (max-width: 992px) and (max-height: 500px) {
+	.intro {
+		&__title {
+			font-size: 30px;
+			margin-bottom: 30px;		
+		}
+	}
 }
