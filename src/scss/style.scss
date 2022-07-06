@@ -107,8 +107,9 @@ body {
 	&__header-title {
 		font-weight: 600;
 		font-size: 24px;
-		line-height: 28px;
+		line-height: 1.166;
 		color: #ACACAC;
+		margin-right: 30px;
 	}
 
 	&__header-img {
@@ -175,8 +176,6 @@ body {
 
 		&__title {
 			font-weight: 600;
-			font-size: 20px;
-			line-height: 24px;
 			margin-bottom: 20px;
 		}
 
@@ -968,7 +967,7 @@ body {
 	&__title {
 		font-weight: 600;
 		font-size: 24px;
-		line-height: 28px;
+		line-height: 1.166;
 		color: #ACACAC;
 		margin-bottom: 20px;
 	}
@@ -1077,6 +1076,191 @@ body {
 	}
 }
 /* PARTNER-START */
+
+/* ADVANTAGES-HELP */
+.advantages-help {
+	&__content {
+		background-image: url(../img/map-bg.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+	}
+
+	&__title {
+		max-width: 943px;
+		margin-bottom: 120px;
+		padding-top: 14px;
+	}
+
+	&__road {
+		max-width: 1260px;
+		margin: 0 auto;
+		padding: 0 15px;
+		position: relative;
+
+		&-img {
+			max-width: 100%;
+		}
+	}
+
+	&__items {
+	}
+
+	&__item {
+		position: absolute;
+	}
+
+	&-item {
+		&__title {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 1.214;
+			margin-bottom: 15px;
+			text-align: center;
+		}
+
+		&__icon {
+			width: 70px;
+			height: 70px;
+			background: rgba(241, 215, 185, 0.8);
+			border: 8px solid #AF9597;
+			border-radius: 100%;
+			margin: 0 auto;
+			position: relative;
+
+			span {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate3d(-50%, -50%, 0);
+
+				font-family: 'Rubik';
+				font-weight: 500;
+				font-size: 26px;
+				line-height: 1.4;
+				color: #FFFFFF;
+			}
+		}
+	}
+
+	&__first-item {
+		max-width: 81px;
+		bottom: 29%;
+    	left: 4%;
+	}
+
+	&__second-item {
+		max-width: 82px;
+		bottom: 29%;
+		left: 12.9%;
+	}
+
+	&__third-item {
+		max-width: 105px;
+		bottom: 19.7%;
+		left: 21.3%;
+	}
+
+	&__fourth-item {
+		max-width: 110px;
+		bottom: 0%;
+		left: 28.7%;
+	}
+
+	&__fifth-item {
+		max-width: 75px;
+		bottom: 9%;
+		left: 39.8%;
+	}
+
+	&__sixth-item {
+		max-width: 70px;
+		bottom: -1%;
+		left: 51.4%;
+	}
+
+	&__seventh-item {
+		max-width: 144px;
+		bottom: 26.3%;
+    	left: 46.2%;
+	}
+
+	&__eighth-item {
+		max-width: 155px;
+		bottom: 45%;
+		left: 34.2%;
+	}
+
+	&__ninth-item {
+		max-width: 76px;
+		bottom: 57%;
+    	left: 51.7%;
+	}
+
+	&__tenth-item {
+		display: flex;
+		align-items: center;
+
+		bottom: 67.2%;
+    	left: 60.7%;
+	}
+
+	&__tenth-item &-item__title {
+		max-width: 153px;
+		text-align: left;
+		order: 1;
+		margin-bottom: 0;
+	}
+
+	&__tenth-item &-item__icon {
+		order: 0;
+		margin-right: 15px;
+	}
+
+	&__eleventh-item {
+		display: flex;
+		align-items: center;
+
+		bottom: 48.2%;
+    	left: 57.4%;
+	}
+
+	&__eleventh-item &-item__title {
+		max-width: 153px;
+		text-align: left;
+		order: 1;
+		margin-bottom: 0;
+	}
+
+	&__eleventh-item &-item__icon {
+		order: 0;
+		margin-right: 15px;
+	}
+
+	&__twelfth-item {
+		max-width: 76px;
+		bottom: 21.4%;
+    	left: 61.5%;
+	}
+
+	&__thirteenth-item {
+		max-width: 113px;
+		bottom: 22.4%;
+		left: 70.3%;
+	}
+
+	&__fourteenth-item {
+		max-width: 70px;
+		bottom: 29%;
+		left: 81.2%;
+	}
+	
+	&__fifteenth-item {
+		max-width: 84px;
+		bottom: 29%;
+		left: 89.7%;
+	}
+}
+/* ADVANTAGES-HELP */
 
 
 @import "media.scss";

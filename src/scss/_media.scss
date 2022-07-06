@@ -125,6 +125,91 @@
 		}
 	}
 
+	.advantages-help {
+		&__content {
+			background-size: contain;
+			background-position: center bottom;
+		}
+
+		&-item {
+			&__title {
+				font-size: 12px;
+				margin-bottom: 5px;
+			}
+
+			&__icon {
+				width: 50px;
+				height: 50px;
+				border: 5px solid #AF9597;
+
+				span {
+					font-size: 20px;
+				}
+			}
+		}
+
+		&__first-item {
+			bottom: 30%;
+		}
+
+		&__second-item {
+			bottom: 30%;
+		}
+
+		&__fourth-item {
+			bottom: 1%;
+		}
+
+		&__fifth-item {
+			bottom: 10%;
+    		left: 38.8%;
+		}
+
+		&__sixth-item {
+			bottom: 0%;
+    		left: 50.4%;
+		}
+
+		&__seventh-item {
+			bottom: 27.3%;
+    		left: 45.2%;
+		}
+
+		&__eighth-item {
+			bottom: 46%;
+    		left: 33.2%;
+		}
+
+		&__ninth-item {
+			bottom: 58%;
+    		left: 51.1%;
+		}
+
+		&__tenth-item &-item__icon {
+			margin-right: 5px;
+		}
+
+		&__eleventh-item &-item__icon {
+			margin-right: 5px;
+		}
+
+		&__twelfth-item {
+			bottom: 22.4%;
+		}
+
+		&__thirteenth-item {
+			bottom: 24.4%;
+		}
+
+		&__fourteenth-item {
+			bottom: 30%;
+		}
+
+		&__fifteenth-item {
+			bottom: 30%;
+		}
+	}
+
 	.advantages-marketplaces {
 		&__content {
 			height: auto;
@@ -345,6 +430,107 @@
 		}
 	}
 
+	.advantages-help {
+		&__title {
+			margin-bottom: 50px;
+		}
+
+		// &__content {
+		// 	background-position: center center;
+		// }
+
+		&-item {
+			&__title {
+				font-size: 10px;
+				margin-bottom: 2px;
+			}
+
+			&__icon {
+				width: 40px;
+				height: 40px;
+				border: 2px solid #AF9597;
+
+				span {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&__first-item {
+			bottom: 31%;
+			left: 2%;
+		}
+
+		&__second-item {
+			bottom: 31%;
+			left: 10.9%;
+		}
+
+		&__third-item {
+			left: 22%;
+		}
+
+		&__fourth-item {
+			bottom: 2%;
+		}
+
+		&__fifth-item {
+			bottom: 11%;
+			left: 37.8%;
+		}
+
+		&__sixth-item {
+			bottom: 0.5%;
+		}
+
+		&__seventh-item {
+			bottom: 28.3%;
+			left: 46.2%;
+			max-width: 102px;
+		}
+
+		&__eighth-item {
+			left: 33.6%;
+			max-width: 127px;
+		}
+
+		&__ninth-item {
+			left: 50.7%;
+		}
+
+		&__tenth-item {
+			left: 61.2%;
+		}
+
+		&__tenth-item &-item__icon {
+			margin-right: 5px;
+		}
+
+		&__eleventh-item {
+			left: 57.9%;
+		}
+
+		&__eleventh-item &-item__icon {
+			margin-right: 5px;
+		}
+
+		&__twelfth-item {
+			bottom: 22.0%;
+		}
+
+		&__thirteenth-item {
+			bottom: 26.4%;
+		}
+
+		&__fourteenth-item {
+			bottom: 31%;
+		}
+
+		&__fifteenth-item {
+			bottom: 31%;
+		}
+	}
+
 	.advantages-analysis {
 		&__content {
 			background-size: contain;
@@ -525,14 +711,14 @@
 	}
 
 	.advantages-analysis {
-		&__items {
-			display: block;
-		}
+		// &__items {
+		// 	display: block;
+		// }
 
-		&__item {
-			width: 100%;
-			margin-bottom: 30px;
-		}
+		// &__item {
+		// 	width: 100%;
+		// 	margin-bottom: 30px;
+		// }
 
 		&-item {
 			&__title {
@@ -542,6 +728,68 @@
 			&__icon {
 				margin-bottom: 20px;
 			}
+		}
+	}
+
+	.advantages-help {
+		padding: 50px 0 20px;
+
+		&__content {
+			background-position: center center;
+		}
+
+		&__road-img {
+			display: none;
+		}
+
+		&__road {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			align-items: end;
+			// margin: 0 -15px;
+		}
+
+		&__item {
+			position: static;
+			width: 33.3333333333%;
+			max-width: none;
+			padding: 0 15px;
+			margin-bottom: 30px;
+		}
+
+		&-item {
+			&__title {
+				font-size: 14px;
+				margin-bottom: 15px;
+			}
+
+			&__icon {
+				width: 70px;
+				height: 70px;
+				border: 8px solid #AF9597;
+
+				span {
+					font-size: 26px;
+				}
+			}
+		}
+
+		&__tenth-item, &__eleventh-item {
+			display: block;
+		}
+
+		&__tenth-item &-item__title, &__eleventh-item &-item__title {
+			max-width: none;
+			text-align: center;
+			margin-bottom: 15px;
+		}
+
+		&__tenth-item &-item__icon, &__eleventh-item &-item__icon {
+			margin: 0 auto;
+			width: 70px;
+			height: 70px;
+			border: 8px solid #AF9597;
 		}
 	}
 
@@ -713,6 +961,17 @@
 		}
 	}
 
+	.advantages-analysis {
+		&__items {
+			display: block;
+		}
+
+		&__item {
+			width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+
 	.investment {
 		&__header-col {
 			&:first-child {
@@ -819,6 +1078,12 @@
 	// 		}
 	// 	}
 	// }
+
+	.advantages-help {
+		&__item {
+			width: 50%;
+		}
+	}
 
 	.investment {
 		&__header-col {
