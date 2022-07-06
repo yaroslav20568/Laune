@@ -96,12 +96,20 @@
 		&__left-items &__item {
 			&:nth-child(2) {
 				max-width: 193px;
+				padding: 0;
 			}
 		}
 		&__right-items &__item {
 			&:first-child {
 				max-width: 159px;
 			}
+		}
+	}
+
+	.dealer-network {
+		&__content {
+			    background-size: contain;
+				background-position: center center;
 		}
 	}
 
@@ -122,6 +130,13 @@
 
 		&__img {
 			transform: translateY(-0%);
+		}
+	}
+
+	.advantages-analysis {
+		&__content {
+			background-size: contain;
+    		background-position: center center;
 		}
 	}
 
@@ -413,9 +428,9 @@
 	}
 
 	.dealer-network {
-		&__content {
-			background-size: contain;
-		}
+		// &__content {
+		// 	background-size: contain;
+		// }
 
 		&__title {
 			margin-bottom: 50px;
@@ -532,9 +547,9 @@
 	}
 
 	.advantages-analysis {
-		&__content {
-			background-size: contain;
-		}
+		// &__content {
+		// 	background-size: contain;
+		// }
 
 		&__title {
 			margin-bottom: 50px;
@@ -948,6 +963,10 @@
 		&__item {
 			width: 100%;
 			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 
 		&-item {
@@ -969,6 +988,10 @@
 		&__item {
 			width: 100%;
 			margin-bottom: 30px;
+
+			&:last-child {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -1105,6 +1128,11 @@
 }
 
 @media(max-width: 380px) {
+	.section {
+		&__header-title {
+			font-size: 22px;
+		}
+	}
 	// .dealer-network {
 	// 	&-item__icon {
 	// 		width: 70px;

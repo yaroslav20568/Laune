@@ -149,7 +149,7 @@ body {
 	}
 
 	&__subtitle {
-		max-width: 819px;
+		max-width: 837px;
 	}
 
 	&__cards {
@@ -200,7 +200,7 @@ body {
 	}
 
 	&__subtitle {
-		max-width: 667px;
+		max-width: 717px;
 	}
 
 	&__content {
@@ -279,7 +279,8 @@ body {
 	}
 
 	&__left-items {
-		padding: 70px 0;
+		// padding: 70px 0;
+		padding: 76px 0 70px;
 	}
 
 	&__left-items &__item {
@@ -289,6 +290,7 @@ body {
 
 		&:nth-child(2) {
 			max-width: 332px;
+			padding-bottom: 15px;
 		}
 
 		&:last-child {
@@ -328,18 +330,23 @@ body {
 /* DEALER-NETWORK */
 .dealer-network {
 
+		& .section__header {
+			margin-bottom: 0;
+		}
+
 		&__content {
 			background-image: url("@img/map-bg.png");
 			background-repeat: no-repeat;
-			background-position: center center;
+			background-position: center top;
 			// background-size: contain;
 			// height: 625px;
-			padding-bottom: 48px;
+			padding-bottom: 32px;
 		}
 
 		&__title {
 			max-width: 740px;
 			margin-bottom: 100px;
+			padding-top: 14px;
 		}
 
 		&__items {
@@ -472,10 +479,14 @@ body {
 
 /* ADVANTAGES-ANALYSIS */
 .advantages-analysis {
+	& .section__header {
+		margin-bottom: 0;
+	}
+
 	&__content {
 		background-image: url("@img/map-bg.png");
 		background-repeat: no-repeat;
-		background-position: center center;
+		background-position: center top;
 		// background-size: contain;
 		// height: 625px;
 		// padding-bottom: 48px;
@@ -484,6 +495,7 @@ body {
 	&__title {
 		max-width: 1095px;
 		margin-bottom: 100px;
+		padding-top: 14px;
 	}
 
 	&__items {
@@ -1066,7 +1078,7 @@ body {
 	}
 
 	&__right {
-		transform: translateX(-50px);
+		transform: translateX(-70px);
 	}
 
 	&-right {
