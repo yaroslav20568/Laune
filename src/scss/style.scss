@@ -1274,5 +1274,14 @@ body {
 }
 /* ADVANTAGES-HELP */
 
+.section__header-fixed {
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	width: 100%;
+	background-color: rgb(250, 243, 243);
+	display: none;
+}
+
 
 @import "media.scss";
