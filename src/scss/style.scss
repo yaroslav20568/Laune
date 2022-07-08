@@ -1280,7 +1280,15 @@ body {
 	top: 0;
 	width: 100%;
 	background-color: rgb(250, 243, 243);
-	display: none;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: .3s linear opacity, .3s linear transform;
+
+	&.active {
+		opacity: 1;
+		top: 0;
+		transform: translateY(0);
+	}
 }
 
 
