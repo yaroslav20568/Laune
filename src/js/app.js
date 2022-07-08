@@ -4,50 +4,57 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainSectionHeader = document.querySelector('.section__header-fixed');
     const mainSectionHeaderTitle = document.querySelector('.section__header-fixed .section__header-title');
 
+
+	const observerFunction = () => {
+		const sections = document.querySelectorAll("section");
+	
+		let options = {
+			rootMargin: `0px 0px 0px ${mainSectionHeader.clientHeight}px`,
+			threshold: /Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) ? 0.1 : 0.4
+		};
+	
+		const callback = (entries, observer) => {
+			entries.forEach(entry => {
+				const { target } = entry;
+
+				if(entry.isIntersecting && target.classList[0] === 'about-company') {
+					mainSectionHeader.classList.add('active');
+				}
+
+				if(entry.isIntersecting) {
+					mainSectionHeaderTitle.textContent = target.firstElementChild.firstElementChild.textContent;
+				}
+	
+				if(entry.isIntersecting && target.classList[0] === 'partner-start') {
+					mainSectionHeaderTitle.textContent = target.firstElementChild.firstElementChild.firstElementChild.firstElementChild.textContent;
+				}
+			});
+		};
+	
+		const observer = new IntersectionObserver(callback, options);
+	
+		sections.forEach((section, index) => {
+			observer.observe(section);
+		});
+	};
+
+
     sectionHeaders.forEach(sectionHeader => {
-        // sectionHeader.style.display = 'none';
+        sectionHeader.style.display = 'none';
         const sectionHeaderTop = sectionHeader.parentElement.parentElement.getBoundingClientRect().top;
     });
 
     window.addEventListener('scroll', () => {
-        console.log(document.documentElement.scrollTop);
         if(document.documentElement.scrollTop > sectionHeaders[0].parentElement.parentElement.getBoundingClientRect().top + intro.clientHeight - mainSectionHeader.clientHeight) {
 			mainSectionHeader.classList.add('active');
-            // mainSectionHeaderTitle.textContent = 'О компании';
-        } else if(document.documentElement.scrollTop < sectionHeaders[0].parentElement.parentElement.getBoundingClientRect().top + intro.clientHeight - mainSectionHeader.clientHeight) {
+        } else {
 			mainSectionHeader.classList.remove('active');
         }
     });
 
+	observerFunction();
 
-
-	const sections = [...document.querySelectorAll("section")];
-
-	let options = {
-		rootMargin: "0px",
-		threshold: 0.5
-	};
-
-	const callback = (entries, observer) => {
-		entries.forEach(entry => {
-			const { target } = entry;
-			
-			// if (entry.intersectionRatio >= 0.25) {
-			// 	console.log(target);
-			// } else {
-
-			// }
-			if(entry.isIntersecting) {
-				console.log(target);
-				mainSectionHeaderTitle.textContent = target.firstElementChild.firstElementChild.textContent;
-				console.log();
-			}
-		});
-	};
-
-	const observer = new IntersectionObserver(callback, options);
-
-	sections.forEach((section, index) => {
-		observer.observe(section);
+	window.addEventListener('resize', () => {
+		observerFunction();
 	});
 });
