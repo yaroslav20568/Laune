@@ -1,3 +1,5 @@
+import { animations } from './functions/animations.js';
+
 document.addEventListener('DOMContentLoaded', () => {
 	const intro = document.querySelector('.intro');
     const sectionHeaders = document.querySelectorAll('section .section__header');
@@ -57,4 +59,16 @@ document.addEventListener('DOMContentLoaded', () => {
 	window.addEventListener('resize', () => {
 		observerFunction();
 	});
+
+
+	const isAnimation = () => {
+		if(!/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i.test(navigator.userAgent) && document.documentElement.clientWidth > 1200 && document.documentElement.clientHeight >= 925) {
+			document.body.classList.add('active');
+			animations();
+		} else {
+			document.body.classList.remove('active');
+		}
+	};
+
+	isAnimation();
 });

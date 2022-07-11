@@ -90,8 +90,32 @@ body {
 }
 /* INTRO */
 
+body.active {
+	overflow-x: hidden;
+}
+
+body.active main {
+	width: 1500%;
+	display: flex;
+	flex-wrap: nowrap;
+	height: 100vh;
+}
+
+body.active .section {
+	width: 100vw;
+}
+
+body.active .investment__title {
+	margin-bottom: 20px;
+}
+
+body.active .partner-start__right-img {
+	transform: translateY(-90px);
+}
+
 .section {
 	padding: 100px 0;
+	// overflow: auto;
 
 	&__header {
 		display: flex;
@@ -1292,6 +1316,10 @@ body {
 		opacity: 1;
 		top: 0;
 		transform: translateY(0);
+
+		.section__header {
+			margin-bottom: 0;
+		}
 	}
 }
 
