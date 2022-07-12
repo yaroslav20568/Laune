@@ -1509,26 +1509,66 @@ body.active .partner-start__right-img {
 		margin-top: 16px;
 		// display: none;
 	}
-
-	&__alert {
-		max-width: 250px;
-		position: fixed;
-		z-index: 300;
-		top: 70px;
-		right: 16px;
-		padding: 10px;
-		background-color: #350268;
-		display: none;
-	}
-
-	&-alert {
-		&__text {
-			flex-direction: column;
-			font-size: 14px;
-			line-height: 1.357;
-		}
-	}
 }
 /* MODAL */
+
+/* ALERT */
+.alert {
+	background-color: #ffb5c3;
+	position: fixed;
+	top: 100px;
+	right: 15px;
+	border-radius: 10px;
+	visibility: hidden;
+	opacity: 0;
+	transition: 0.3s linear;
+
+	&--active {
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&__wrapper {
+		padding: 10px 20px 10px 10px;
+	}
+
+	&__close {
+		position: absolute;
+		right: 10px;
+		top: 50%;
+		transform: translateY(-50%);
+		cursor: pointer;
+		transition: .3s linear transform;
+
+		&:hover {
+			transform: scale(1.15);
+		}
+
+		&:before {
+			transform: translate3d(-50%, -50%, 0) rotate(135deg);
+		}
+
+		&:after {
+			transform: translate3d(-50%, -50%, 0) rotate(45deg);
+		}
+
+		&:before, &:after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 2px;
+			background-color: #000;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+		}
+	}
+
+	&__text {
+		font-size: 16px;
+		user-select: none;
+	}
+}
+/* ALERT */
 
 @import "media.scss";

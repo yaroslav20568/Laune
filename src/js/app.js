@@ -90,6 +90,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		modal.classList.remove('modal--active');
 
 		const inputs = document.querySelectorAll(`.${modal.classList[0]} input[type="text"]`);
+		inputs.forEach(input => {
+			input.style.border = '1px solid #999';
+		});
+		
+		inputs[inputs.length - 1].nextElementSibling.textContent = '';
+
 		resetInputs(inputs);
 	};
 
@@ -127,7 +133,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function resetInputs(inputs) {
 		inputs.forEach(input => input.value = '');
 	};
-
+	
 	const validateForm = (button) => {
 		const form = button.parentElement;
 		const classForm = form.classList[0];
@@ -193,6 +199,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			.then((data) => {
 				console.log(data);
 
+				document.querySelector('.alert').classList.add('alert--active');
+				document.querySelector('.alert__close').addEventListener('click', () => {
+					document.querySelector('.alert').classList.remove('alert--active');
+				});
+				
 				if(form.parentElement.classList[0] === 'partner-modal__content') {
 					closeModal(form.parentElement.parentElement.parentElement);
 				} else {
