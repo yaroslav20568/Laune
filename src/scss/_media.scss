@@ -830,6 +830,18 @@
 		// 	text-align: center;
 		// }
 	}
+
+	.section {
+		&__header-fixed {
+			.section__button {
+				display: none;
+			}
+
+			.section__header-img {
+				margin-right: 18px;
+			}
+		}
+	}
 }
 
 @media(max-width: 650px) {
@@ -1083,6 +1095,15 @@
 	}
 }
 
+@media(max-width: 500px) {
+	.section {
+		&__header-title {
+			font-size: 22px;
+			text-align: right;
+		}
+	}
+}
+
 @media(max-width: 480px) {
     .header {
         &__img {
@@ -1146,11 +1167,12 @@
 }
 
 @media(max-width: 380px) {
-	.section {
-		&__header-title {
-			font-size: 22px;
-		}
-	}
+	// .section {
+	// 	&__header-title {
+	// 		font-size: 22px;
+	// 	}
+	// }
+
 	// .dealer-network {
 	// 	&-item__icon {
 	// 		width: 70px;
