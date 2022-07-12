@@ -166,6 +166,7 @@ body.active .partner-start__right-img {
 		padding: 10px 15px;
 		font-size: 18px;
 		font-weight: 500;
+		border-radius: 15px;
 		transition: .4s linear background-color;
 
 		&:hover {
@@ -1153,12 +1154,18 @@ body.active .partner-start__right-img {
 	&__form {
 		input {
 			width: 100%;
+			border-radius: 15px;
+			margin-top: 20px;
+
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 
 		&-input {
 			display: block;
 			border: 1px solid #999;
-			margin-bottom: 20px;
+			// margin-bottom: 20px;
 			padding: 10px 15px;
 			font-size: 18px;
 		}
@@ -1176,6 +1183,12 @@ body.active .partner-start__right-img {
 				background-color: #96BE98;
 			}
 		}
+	}
+
+	&__message {
+		font-size: 18px;
+		text-align: center;
+		margin-top: 5px;
 	}
 }
 /* PARTNER-FORM */
@@ -1397,8 +1410,8 @@ body.active .partner-start__right-img {
     z-index: 1000;
     overflow-y: auto;
     overflow-x: hidden;
-    // visibility: hidden;
-    // opacity: 0;
+    visibility: hidden;
+    opacity: 0;
     transition: .3s linear;
 
 	&--active {
