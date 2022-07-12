@@ -329,6 +329,9 @@
 		// 		padding-left: 25px;
 		// 	}
 		// }
+		&__form {
+			width: 100%;
+		}
 	}
 }
 
@@ -645,6 +648,18 @@
 			align-items: center;
 		}
 
+		&__wrapper-subtitle {
+			margin-bottom: 30px;
+		}
+
+		&__contacts-phone {
+			margin-bottom: 20px;
+		}
+
+		&__info {
+			margin-bottom: 30px;
+		}
+
 		// &__qr-code {
 		// 	h3 {
 		// 		padding: 0;
@@ -829,6 +844,10 @@
 		// &__qr-code {
 		// 	text-align: center;
 		// }
+
+		&__form {
+			width: 437px;
+		}
 	}
 
 	.section {
@@ -1162,6 +1181,12 @@
 					font-size: 22px;
 				}
 			}
+		}
+	}
+
+	.partner-start {
+		&__form {
+			width: 100%;
 		}
 	}
 }

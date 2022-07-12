@@ -1052,6 +1052,7 @@ body.active .partner-start__right-img {
 		align-items: center;
 		justify-content: space-between;
 		width: 570px;
+		margin-bottom: 40px;
 	}
 
 	&__contacts {
@@ -1127,6 +1128,10 @@ body.active .partner-start__right-img {
 	// 	}
 	// }
 
+	&__form {
+		width: 437px;
+	}
+
 	&__right {
 		transform: translateX(-70px);
 	}
@@ -1142,6 +1147,38 @@ body.active .partner-start__right-img {
 	}
 }
 /* PARTNER-START */
+
+/* PARTNER-FORM */
+.partner {
+	&__form {
+		input {
+			width: 100%;
+		}
+
+		&-input {
+			display: block;
+			border: 1px solid #999;
+			margin-bottom: 20px;
+			padding: 10px 15px;
+			font-size: 18px;
+		}
+
+		&-button {
+			background: none;
+			cursor: pointer;
+			border: 1px solid #96BE98;
+			padding: 10px 15px;
+			font-size: 18px;
+			font-weight: 500;
+			transition: 0.4s linear background-color;
+
+			&:hover {
+				background-color: #96BE98;
+			}
+		}
+	}
+}
+/* PARTNER-FORM */
 
 /* ADVANTAGES-HELP */
 .advantages-help {
