@@ -870,6 +870,11 @@
 			margin-bottom: 30px;
 		}
 	}
+
+	.modal__close {
+		right: -10px;
+    	top: -10px;
+	}
 }
 
 @media(max-width: 600px) {
@@ -1211,6 +1216,11 @@
 	// 		width: 30px;
 	// 	}
 	// }
+	.modal {
+		&__title {
+			font-size: 30px;
+		}
+	}
 }
 
 @media(min-width: 320px) and (max-width: 992px) and (max-height: 500px) {

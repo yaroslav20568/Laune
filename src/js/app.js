@@ -71,4 +71,8 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	isAnimation();
+
+	/* MODAL */
+
+	/* MODAL */
 });
