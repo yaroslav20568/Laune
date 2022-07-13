@@ -226,6 +226,10 @@ document.addEventListener('DOMContentLoaded', () => {
 				document.querySelector('.alert__close').addEventListener('click', () => {
 					document.querySelector('.alert').classList.remove('alert--active');
 				});
+
+				setTimeout(() => {
+					document.querySelector('.alert').classList.remove('alert--active');
+				}, 4000);
 				
 				if(form.parentElement.classList[0] === 'partner-modal__content') {
 					closeModal(form.parentElement.parentElement.parentElement);
