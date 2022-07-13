@@ -7,7 +7,7 @@
 	$mail = new PHPMailer();
 	$mail->CharSet = "utf-8";
 	$mail->setFrom('noreply@zovhome.ru', 'noreply@zovhome.ru'); // от кого (email и имя)
-	$mail->addAddress('rak2020999@inbox.ru', 'rak2020999@inbox.ru');  // кому (email и имя)
+	$mail->addAddress('yaroslav@nbd.by', 'yaroslav@nbd.by');  // кому (email и имя)
 	$mail->Subject = 'Сотрудничать с нами';                         // тема письма
 	// html текст письма
 	// $mail->msgHTML("<html><body>
