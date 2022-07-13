@@ -153,7 +153,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				if(!arrayAddValue.includes(input.name)) {
 					arrayAddValue.push(input.name);
 				}
-			} else if(/^[\d\-]{7,18}$/.test(input.value) && input.name === 'phone') {
+			} else if(/^(8|\+7)[\d\-]{7,18}$/.test(input.value) && input.name === 'phone') {
 				input.style.border = '1px solid #999';
 				k++;
 				
