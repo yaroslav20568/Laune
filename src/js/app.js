@@ -6,6 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainSectionHeader = document.querySelector('.section__header-fixed');
     const mainSectionHeaderTitle = document.querySelector('.section__header-fixed .section__header-title');
 
+	$(".mask-phone").mask("+375(99) 99-99-999", {autoclear: false});
 
 	const observerFunction = () => {
 		const sections = document.querySelectorAll("section");
@@ -78,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	const modalCloseBtns = document.querySelectorAll('.modal__close');
 
 	const openModal = (modal) => {
-		document.body.style.overflow = 'hidden';
+		document.body.style.overflowY = 'hidden';
 		modal.classList.add('modal--active');
 
 		outsideClickModal(modal);
@@ -86,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	};
 
 	const closeModal = (modal) => {
-		document.body.style.overflow = 'auto';
+		document.body.style.overflowY = 'auto';
 		modal.classList.remove('modal--active');
 
 		const inputs = document.querySelectorAll(`.${modal.classList[0]} input[type="text"]`);
@@ -133,7 +134,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	function resetInputs(inputs) {
 		inputs.forEach(input => input.value = '');
 	};
-	
+
 	const validateForm = (button) => {
 		const form = button.parentElement;
 		const classForm = form.classList[0];
