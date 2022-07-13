@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainSectionHeader = document.querySelector('.section__header-fixed');
     const mainSectionHeaderTitle = document.querySelector('.section__header-fixed .section__header-title');
 
-	$(".mask-phone").mask("+375(99) 99-99-999", {autoclear: false});
+	// $(".mask-phone").mask("+375(99) 99-99-999");
 
 	const observerFunction = () => {
 		const sections = document.querySelectorAll("section");
@@ -144,6 +144,32 @@ document.addEventListener('DOMContentLoaded', () => {
 		let k = 0;
 
 		let arrayAddValue = [];
+
+		const validateInput = (input) => {
+			if(/^[a-zA-Zа-яА-Я'][a-zA-Zа-яА-Я-' ]+[a-zA-Zа-яА-Я']?$/u.test(input.value) && input.name === 'name') {
+				input.style.border = '1px solid #999';
+				k++;
+				
+				if(!arrayAddValue.includes(input.name)) {
+					arrayAddValue.push(input.name);
+				}
+			} else if(/((-|\\+)?[0-9]+(\\.[0-9]+)?)+/u.test(input.value) && input.name === 'phone') {
+				input.style.border = '1px solid #999';
+				k++;
+				
+				if(!arrayAddValue.includes(input.name)) {
+					arrayAddValue.push(input.name);
+				}
+			} else {
+				input.style.border = '1px solid red';
+
+				if (arrayAddValue.includes(input.name)) {
+					const elemIndex = arrayAddValue.findIndex(inputIsValidate => inputIsValidate === input.name);
+					arrayAddValue = [...arrayAddValue.slice(0, elemIndex), ...arrayAddValue.slice(elemIndex + 1)];
+					// console.log(arrayAddValue);
+				}
+			}
+		};
 		
 		inputs.forEach((input, index) => {
 			if(!input.value) {
@@ -155,16 +181,14 @@ document.addEventListener('DOMContentLoaded', () => {
 					// console.log(arrayAddValue);
 				}
 			} else {
-				input.style.border = '1px solid #999';
-				k++;
-
-				arrayAddValue.push(input.name);
+				validateInput(input);
 				// console.log(arrayAddValue);
 			}
 
 			input.addEventListener('input', () => {
 				if(!input.value) {
 					input.style.border = '1px solid red';
+					// message.textContent = 'Заполните пустые поля';
 
 					if (arrayAddValue.includes(input.name)) {
 						const elemIndex = arrayAddValue.findIndex(inputIsValidate => inputIsValidate === input.name);
@@ -172,24 +196,22 @@ document.addEventListener('DOMContentLoaded', () => {
 						// console.log(arrayAddValue);
 					}
 				} else {
-					input.style.border = '1px solid #999';
-
-					if(!arrayAddValue.includes(input.name)) {
-						arrayAddValue.push(input.name);
-					}
+					// message.textContent = '';
+					validateInput(input);
 					// console.log(arrayAddValue);
 				}
+				// console.log(arrayAddValue);
 
-				if(arrayAddValue.length !== inputs.length) {
-					message.textContent = 'Заполните пустые поля';
-				} else {
-					message.textContent = '';
-				}
+				// if(arrayAddValue.length !== inputs.length) {
+				// 	message.textContent = 'Заполните пустые поля';
+				// } else {
+				// 	message.textContent = '';
+				// }
 			});
 		});
 		
 		if(k == inputs.length) {
-			console.log('Форма отправлена');
+			// console.log('Форма отправлена');
 
 			let formData = new FormData(form);
 			// formData.append('formTitle', titleForm);
@@ -198,7 +220,7 @@ document.addEventListener('DOMContentLoaded', () => {
 				body: formData
 			})
 			.then((data) => {
-				console.log(data);
+				// console.log(data);
 
 				document.querySelector('.alert').classList.add('alert--active');
 				document.querySelector('.alert__close').addEventListener('click', () => {
@@ -213,20 +235,11 @@ document.addEventListener('DOMContentLoaded', () => {
 			})
 		}
 
-		if(arrayAddValue.length !== inputs.length) {
-			message.textContent = 'Заполните пустые поля';
-		} else {
-			message.textContent = '';
-		}
-		// inputs.forEach(input => {
-		// 	input.addEventListener('input', () => {
-		// 		if(!input.value) {
-		// 			input.style.border = '1px solid red';
-		// 		} else {
-		// 			input.style.border = '1px solid #999';
-		// 		}
-		// 	});
-		// });
+		// if(arrayAddValue.length !== inputs.length) {
+		// 	message.textContent = 'Заполните пустые поля';
+		// } else {
+		// 	message.textContent = '';
+		// }
 	};
 
 	buttonsPartnerSend.forEach(button => {
