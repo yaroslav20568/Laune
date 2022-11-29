@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('html/head.html', { "title": "Laune" })
+	<body>
+		<!-- @@include('html/intro.html')
+		@@include('html/main.html') -->
+        <div class="section__header-fixed" style="position: relative;">
+            <div class="container">
+                <div class="section__header">
+                    <img src="img/section-logo.svg" alt="Лого" class="section__header-img">
+                    <!-- <h2 class="section__header-title">Цели сомпании</h2>
+                    <button class="section__button">Сотрудничать с нами</button> -->
+                </div>
+            </div>
+        </div>
+
+        <section class="partner-start section">
+            <div class="container">
+                <div class="partner-start__content">
+                    <div class="partner-start__left">
+                        <div class="section__header">
+                            <h2 class="section__header-title">Партнёрская программа</h2>
+                        </div>
+    
+                        <div class="partner-start__wrapper-subtitle section__wrapper-subtitle">
+                            <h4 class="partner-start__subtitle section__subtitle">Стартуй с нами прямо сейчас!</h4>
+                        </div>
+    
+                        <div class="partner-start__info">
+                            <div class="partner-start__contacts">
+                                <div class="partner-start__contacts-phone">
+                                    <a href="tel:+375297857277"><p>+375 (29) 78-57-277</p></a>
+                                </div>
+                                
+                                <div class="partner-start__contacts-email">
+                                    <a href="mailto:mail@htmlacademy.ru"><p>launeb2b@gmail.com</p></a>
+                                </div>
+                            </div>
+    
+                            <!-- <div class="partner-start__qr-code">
+                                <h3>Отсканируй код</h3>
+                                <img src="@img/partner-start/qr-code.png" alt="qr-code">
+                            </div> -->
+                        </div>
+    
+                        <form action="" class="partner-start__form partner__form">
+                            <input type="text" placeholder="Имя" name="name" class="partner-start__form-input partner__form-input" autocomplete="off">
+                            <input type="text" placeholder="Телефон" name="phone" class="partner-start__form-input partner__form-input mask-phone" autocomplete="off">
+                            <input type="text" placeholder="Город" name="city" class="partner-start__form-input partner__form-input" autocomplete="off">
+                            <!-- <div class="partner-start__message partner__message"></div> -->
+                            <input type="submit" value="Хочу сотрудничать" class="partner-start__form-button partner__form-button">
+                        </form>
+                    </div>
+                    <div class="partner-start__right">
+                        <img src="@img/partner-start/partner-start-img.png" alt="Ракета" class="partner-start__right-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="alert">
+            <div class="alert__wrapper">
+                <div class="alert__close"></div>
+                <h6 class="alert__text">Форма успешно отправлена</h6>
+            </div>
+        </div>
+
+		<!-- @@include('html/footer.html') -->
+
+		<!-- @@include('html/modals.html') -->
+
+		
+		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script> -->
+
+		<script src="js/app.min.js"></script>
+	</body>
+</html>
